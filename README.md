@@ -5,7 +5,8 @@ This project link a GPS tracker that sends it's coordinate by LoRa trought the T
 ToDo: resend the coordinate to Owntracks to be able to see it on your mobile phone. Need to reformat the payload to be owntracks compliant
 
 You need :
-* a LoPy or LoPy4 from Pycom
-* a Pytrack from Pycom
-* a TTN acount
-* a working Home Assistant system with a functionning MQTT broker : https://home-assistant.io/components/device_tracker.mqtt_json/
+* a LoPy or LoPy4 from Pycom https://pycom.io/product/lopy/
+* a Pytrack from Pycom https://pycom.io/hardware/pytrack-specs/
+* a TTN acount https://console.thethingsnetwork.org/
+* a working Home Assistant system with a functionning MQTT broker : https://home-assistant.io/
+
