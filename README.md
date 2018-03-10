@@ -15,6 +15,11 @@ In the pycom folder, the program to run on the LoPy attached to a Pytrack. Repla
 
 In the TTN folder, the code to insert in your payload decoder
 
+You should see decoded data now in your TTN application page.
+<p align="center">
+  <img src="help/TTN_application_data.png" width="350"/>
+</p>
+
 In the HA folder, some lines to add to your configuration.yaml and to your automation.yaml
 replace remote-gps/devices/lopypremier/up/payload_fields by your application name and device name
 
