@@ -1,0 +1,20 @@
+- action:
+    service: mqtt.publish
+    data_template:
+      topic: owntracks/ttnmobile/TN
+      retain: true
+      payload: >-
+        {
+          "_type" : "location",
+          "acc":10,
+          "tid":"TN",
+          "lat": {{ states.device_tracker.lopypremier.attributes.latitude | string }},
+          "lon": {{ states.device_tracker.lopypremier.attributes.longitude | string }},
+          "tst":1520191212 }}
+        }      
+  alias: forward_ttnmobile_owntracks
+  condition: []
+  id: '1520178822943'
+  trigger:
+  - platform: mqtt
+    topic: remote-gps/devices/lopypremier/up/payload_fields

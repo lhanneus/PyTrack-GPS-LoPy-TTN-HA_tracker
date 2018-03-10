@@ -1,0 +1,5 @@
+device_tracker:
+
+  - platform: mqtt_json
+    devices:
+      lopypremier: remote-gps/devices/lopypremier/up/payload_fields
